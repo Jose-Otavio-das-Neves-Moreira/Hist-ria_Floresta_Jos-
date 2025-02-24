@@ -31,7 +31,7 @@ html += '<p> Você decide ignorar os sons e volta a festejar com sua famila.</p>
 html += '<p> Exatamente as 1:33 você ouve o mesmo barulho porem dessa vez ele está se aproximando,</p>'
 html += '<p> você sente medo e um vento frio passa em seu rosto, então em um piscar de olhos você se vê sozinho. </p>'
 html += '<img src="moto.gif">';
-html += '<button onclick="Deserta5()">Desertar e começar a chorar.</button>';
+html += '<button onclick="Deserta5()"> Chorar </button>';
 html += '<button onclick="Casa6()">Voltar para casa.</button>';
 html += '</div>'
 
@@ -54,8 +54,7 @@ $( "body" ).append( html );
 function Esperar4(){
 var html = '<div class="container">';
 html += '<p> Você vê um pequeno vagalume encostando na luz e convulsionando, então resolve ignorar a luz.</p>'
-html += '<p> Enquanto você está virando para voltar a procurar o som, você se depara com um fauno.</p>'
-html += '<p> perante a tal visão você cai no chão e ouve ele falando seu nome e te falar essas palavras:</p>'
+html += '<p> Enquanto você está virando para voltar a procurar o som, você se depara com um fauno, perante a tal visão você cai no chão e ouve ele falando seu nome e te falar essas palavras:</p>'
 html += '<p> "Siga Para o norte e não volte para o sitio, não a mais ninguem lá"</p>'
 html += '<img src="https://cdn0.casamentos.com.br/usr/0/2/2/8/cfb_2x_980946.jpg">';
 html += '<button onclick=" Perguntar7()">Perguntar mais a ele.</button>';
@@ -67,12 +66,61 @@ $( "body" ).append( html );
 
 function Deserta5(){
 var html = '<div class="container">';
-html += '<p> Você começa a chorar até o amanhecer do dia quando o dono do sitio aparece, e te questiona sobre sua familia, </p>'
-html += '<p> você conta oque ocorreu mas ele não acredita e te leva para uma delegacia onde você vai preso pelo suposto assasinato de sua familia.</p>'
+html += '<p> Você começa a chorar até o amanhecer do dia quando o dono do sitio aparece, e te questiona sobre sua familia. Você conta oque ocorreu mas ele não acredita e te leva para uma delegacia onde você vai preso pelo suposto assasinato de sua familia.</p>'
 html += '<p> Fim <p>'
 html += '<img src="https://cdn0.casamentos.com.br/usr/0/2/2/8/cfb_2x_980946.jpg">';
 html += '</div>'
 
+$( "body" ).append( html );
+}
+
+function Casa6(){
+var html = '<div class="container">';
+html += '<p> Ao voltar pra casa você se depara com seu primo, aliviado você começa a perguntar pra ele sobre o que aconteceu ali.</p>'
+html += '<p> Ele diz para você se aproximar porque ele está com a voz rouca. Na parede ao seu Lado está o facão de seu avo</p>'
+html += '<button onclick=" Aproximar9()">Se aproximar de seu primo.</button>';
+html += '<button onclick=" Faca10()">Pegar o Facão</button>';
+html += '<img src="https://cdn0.casamentos.com.br/usr/0/2/2/8/cfb_2x_980946.jpg">';
+html += '</div>'
+$( "body" ).append( html );
+}
+
+function Perguntar7(){
+var html = '<div class="container">';
+html += '<p> Você Pergunta para o Fauno sobre aonde fica o norte e o porque de não poder voltar para casa.</p>'
+html += '<p> Ele te responde: "Não há mais ninguem no sitio, a brisa fresca os levou" e apontou para o suposto norte.</p>'
+html += '<button onclick=" Desacreditar11()"> Você não confia no Fauno </button>';
+html += '<button onclick=" Acreditar12()"> Você confia no Fauno </button>';
+html += '<img src="https://cdn0.casamentos.com.br/usr/0/2/2/8/cfb_2x_980946.jpg">';
+html += '</div>'
+$( "body" ).append( html );
+}
+
+function Norte8(){
+var html = '<div class="container">';
+html += '<p> Você Tentar ir para o Norte mas percebe que não faz a menor ideia de onde fica o norte e se vê perdido na floresta. Você nunca mais conseguiu voltar de lá.</p>'
+html += '<p> Fim </p>'
+html += '<img src="https://cdn0.casamentos.com.br/usr/0/2/2/8/cfb_2x_980946.jpg">';
+html += '</div>'
+$( "body" ).append( html );
+}
+
+function Aproximar9(){
+var html = '<div class="container">';
+html += '<p> Você se aproxima  do seu "primo" e quando está proximo o suficiente ele te devora.</p>'
+html += '<p> Fim </p>'
+html += '<img src="https://cdn0.casamentos.com.br/usr/0/2/2/8/cfb_2x_980946.jpg">';
+html += '</div>'
+$( "body" ).append( html );
+}
+
+function Faca10(){
+var html = '<div class="container">';
+html += '<p> Você pega o facão do seu avô e percebe que tem algo estranho com os olhos de seu primo, eles parecem inquietos.</p>'
+html += '<button onclick=" Aproximar9()"> Você se aproxima do seu primo </button>';
+html += '<button onclick=" Mata12()"> Você mata seu "primo" </button>';
+html += '<img src="https://cdn0.casamentos.com.br/usr/0/2/2/8/cfb_2x_980946.jpg">';
+html += '</div>'
 $( "body" ).append( html );
 }
 
@@ -88,8 +136,15 @@ $( "body" ).append( html );
     align-items: center;
 }
 
+p{
+    font-size: 40px;
+    margin: 5px;
+}
+
+
 button{
     width: 500px;
+    font-size: 50px;
 }
 
 </style>
